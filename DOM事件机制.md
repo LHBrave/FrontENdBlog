@@ -1,19 +1,19 @@
 ## 一：DOM事件级别
-#### DOM0级事件
+#### 1.DOM0级事件
 ```
 bn.onClick = function();
 ```
 **DOM0的事件绑定方法是在冒泡阶段（或者目标阶段）执行的**
 
-#### DOM2级事件
+#### 2.DOM2级事件
 ```
-bn.addEventListener(event-name,callback,useCapture)
+bn.adEventListener(event-name,callback,useCapture)
 ```
 + event-name: 事件名称
 + callback: 回调函数，当事件被触发时，会传入一个参数为当前的事件对象；
 + useCapture：指定事件触发的阶段，默认是false，表示事件句柄在冒泡阶段执行；
 
-#### DOM3级事件
+#### 3.DOM3级事件
 在DOM2级事件的基础上添加了更多的事件类型，比如鼠标事件、滚动事件、焦点事件、文本事件、键盘事件等等；
 
 ## 事件模型和事件流
